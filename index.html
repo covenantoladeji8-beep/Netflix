@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Live coding test(Netflix)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon"
+        href="data:image/svg+xml;base64,PHN2ZyBjbGFzcz0ibi1sb2dvLXN2ZyIgZm9jdXNhYmxlPSJmYWxzZSIgdmlld0JveD0iMjI1IDAgNTUyIDEwMDAiIGFyaWEtaGlkZGVuPSJ0cnVlIiBkYXRhLXVpYT0ibi1sb2dvIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxyYWRpYWxHcmFkaWVudCBpZD0iOlI0cWphbGFsYjk2Oi1hIiByPSI3NSUiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLjM4IDAgLjU3ODUgMSAuMDIgMCkiPjxzdG9wIG9mZnNldD0iNjAlIiBzdG9wLW9wYWNpdHk9Ii4zIj48L3N0b3A+PHN0b3Agb2Zmc2V0PSI5MCUiIHN0b3Atb3BhY2l0eT0iLjA1Ij48L3N0b3A+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLW9wYWNpdHk9IjAiPjwvc3RvcD48L3JhZGlhbEdyYWRpZW50PjwvZGVmcz48cGF0aCBkPSJNMjI1IDB2MTAwMGM2MC04IDEzOC0xNCAxOTgtMTdWMEgyMjUiIGZpbGw9IiNiMTA2MGUiPjwvcGF0aD48cGF0aCBkPSJNNTc5IDB2OTgzYzcxIDMgMTMxIDkgMTk4IDE3VjBINTc5IiBmaWxsPSIjYjEwNjBlIj48L3BhdGg+PHBhdGggZD0iTTIyNSAwdjIwMGwxOTggNjAwVjU1N2wxNTEgNDI2Yzc2IDMgMTM2IDkgMjAzIDE3VjgwMEw1NzkgMjAwdjI0MEw0MjMgMEgyMjUiIGZpbGw9InVybCgjOlI0cWphbGFsYjk2Oi1hKSI+PC9wYXRoPjxwYXRoIGQ9Ik0yMjUgMGwzNDkgOTgzYzc2IDMgMTM2IDkgMjAzIDE3TDQyMyAwSDIyNSIgZmlsbD0iI2U1MDkxNCI+PC9wYXRoPjwvc3ZnPg=="
+        type="image/x-icon">
+</head>
+
+<body>
+
+
+
+    <div class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+
+        <nav class="navbar">
+            <img src="https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production_2026-05-14/consent/87b6a5c0-0104-4e96-a291-092c11350111/019ae4b5-d8fb-7693-90ba-7a61d24a8837/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png"
+                alt="Netflix" class="logo">
+            <button class="navbar-btn"><a href="https://www.netflix.com/ng/login">Sign In</a></button>
+        </nav>
+
+        <div class="hero-content">
+            <h1>Unlimited movies, TV<br>shows, and more</h1>
+            <p class="price">Starts at ₦2,500. Cancel anytime.</p>
+            <p class="subtext">Ready to watch? Enter your email to create or restart your membership.</p>
+            <div class="email-form">
+                <input type="email" placeholder="Email address">
+                <button>Get Started </button>
+            </div>
+        </div>
+
+    </div>
+
+    <section class="trending-section">
+        <h2 class="section-title">Trending Now</h2>
+        <div class="slider-container">
+            <button class="slider-arrow prev" onclick="scrollSlider(1)"></button>
+            <div class="slider-viewport">
+                <div class="slider-wrapper" id="slider">
+                    <div class="movie-card">
+                        <div class="card-image">
+                            <img src="https://occ-0-5543-1168.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABes76sJdwVfZ-KSAdzkKSwUMmVnVNt2xlYdFYR9fv-k1Lkm1kcekREgR0Wtcxb6K7IcGGIzxUqu4AZY7tTzcG4nL_pHtiFXvdzk.webp?r=d0a"
+                                alt="Gingerr">
+                        </div>
+                        <span class="rank-number">1</span>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-image">
+                            <img src="https://occ-0-5543-1168.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABT3fC8I6khza3PL7vuoiqEcPs6Yko6i66Dukx7OSb0mQ_g7MHT5KSHJXvY4s1by3qnDg7fGxVvDw2fd0G0XYXRL9FChbRkVLh5M.webp?r=7ba"
+                                alt="Behind the Scenes">
+                        </div>
+                        <span class="rank-number">2</span>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-image">
+                            <img src="https://occ-0-5543-1168.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABUQjcVCNF1L3aQz8_dT0VJdheJDF5Gl1UG6SDyobNWKk5pkZiKoGu4rGKbjl-oX9R5RyT2u-9VP6LzY5wMAaFMnWqVDIc83-kcn0p9W2Ftl_dkNeg_RaMxpKnY4b71vU94y8.webp?r=b11"
+                                alt="Nemesis">
+                        </div>
+                        <span class="rank-number">3</span>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-image">
+                            <img src="https://occ-0-5543-1168.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABWyCCrOmdEbZBIRq4DUZL6Xa9LPn9DvIEnoIVNelgxCX7JVtP9mVfBUEpBrwr2qavnyWURCGQHyxPs3rBZtoOkSdebMME9-QIE-dyQ44guS15spn36u4fLbIKzVO3XasdrYa.webp?r=7c0"
+                                alt="The Wonderfoods">
+                        </div>
+                        <span class="rank-number">4</span>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-image">
+                            <img src="https://occ-0-5543-1168.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABZ4ezVo61K2GyH4ZybaTO3jDTOIhbPcxxbdcIzy6jKM4QLl91msAEv7TanOsxxly-0qQMLdV7bHHKtlOyWXKmu_KGbyjnizuJNXrx4OAbUyWEj4PuRXKPsOMh5CHW1CqnYp-.webp?r=0c6"
+                                alt="Dark Waters">
+                        </div>
+                        <span class="rank-number">5</span>
+                    </div>
+
+                    <div class="movie-card">
+                        <div class="card-image">
+                            <img src="https://occ-0-5543-1168.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABTiNrZ_1C7knUHohvdsU_4PKLRl59bKubAsfjF3rpUGmLRRBt4WqC3mtPL8CZOzEBG9EWB2_j-zxsjyw9fytCy_Td3cx3i6Y79WfBsbxY5zhiEJqrpXLSMCLwsc_WQLxExa2.webp?r=932"
+                                alt="Dark Waters">
+                        </div>
+                        <span class="rank-number">6</span>
+                    </div>
+
+                    <div class="movie-card">
+                        <div class="card-image">
+                            <img src="https://occ-0-5543-1168.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABRvUxbA8J_XEBAcLBoopI2mRAzqsOBFBOyWiTdCbDYy7i4PZ8z1ravzHPk5BUicginijXQjhvttMG2LByCQ9U9Wqt0RfmqSh3E5EDdmvjR18__zOyHaKE8RcW4aq1-lKoyaw.webp?r=8f9"
+                                alt="Dark Waters">
+                        </div>
+                        <span class="rank-number">7</span>
+                    </div>
+
+                    <div class="movie-card">
+                        <div class="card-image">
+                            <img src="https://occ-0-5543-1168.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABaVXphhPzy58tJ3rd8QfNF5NcfcfNfY5BgnNHimngTEVemB8AL4fdcqXvOx8_0W5zGAbzg3prRKtcfFkwsfE813oiYiuIoYrXdQME5LO71LyHhCPJ0MZNuPOiB0wOOngD05e.webp?r=7e2"
+                                alt="Dark Waters">
+                        </div>
+                        <span class="rank-number">8</span>
+                    </div>
+
+                    <div class="movie-card">
+                        <div class="card-image">
+                            <img src="https://occ-0-5543-1168.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABVEtdUZiz4F_VvRar_YRYkemWQzwLgXXV3Rb09mIeldUR-FE4-C7pGxRK25v2LwdjxDmfZFrXUnFeRkiZFE-ytZMaWLGwBi0X2HaLi7OHyWJXa5pxJAztWNwovRZ39Ou52zy.webp?r=9a5"
+                                alt="Dark Waters">
+                        </div>
+                        <span class="rank-number">9</span>
+                    </div>
+
+                    <div class="movie-card">
+                        <div class="card-image">
+                            <img src="https://occ-0-5543-1168.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABfl94jgRPXvo9bIR7KfulpWUvoNdVsp68z-k95dtTZ6yVuKfZx-uGKPNjUwkOo65xa60OilK73awFonAutInXvL6Z0PGXHvJtms.webp?r=384"
+                                alt="Dark Waters">
+                        </div>
+                        <span class="rank-number">10</span>
+                    </div>
+
+                    <script>
+                        function scrollSlider(direction) {
+                            const slider = document.getElementById('slider');
+                            const cardWidth = 240 + 8;
+                            slider.scrollBy({
+                                left: direction * cardWidth * 5,
+                                behavior: 'smooth'
+                            });
+                        }
+                    </script>
+
+                </div>
+                <button class="slider-arrow"></button>
+            </div>
+    </section>
+
+    <section class="reasons-section">
+        <h2 class="section-title">More Reasons to Join</h2>
+        <div class="reasons-grid">
+            <div class="reason-card">
+                <div class="reason-content">
+                    <h3>Enjoy on your TV</h3>
+                    <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+                </div>
+                <div class="reason-icon tv">📺</div>
+            </div>
+            <div class="reason-card">
+                <div class="reason-content">
+                    <h3>Download your shows to watch offline</h3>
+                    <p>Save your favorites easily and always have something to watch.</p>
+                </div>
+                <div class="reason-icon download">⬇️</div>
+            </div>
+            <div class="reason-card">
+                <div class="reason-content">
+                    <h3>Watch everywhere</h3>
+                    <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+                </div>
+                <div class="reason-icon stream">📡</div>
+            </div>
+            <div class="reason-card">
+                <div class="reason-content">
+                    <h3>Create profiles for kids</h3>
+                    <p>Send kids on adventures with their favorite characters in a space made just for them — free with
+                        your membership.</p>
+                </div>
+                <div class="reason-icon kids">👶</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-list">
+            <div class="faq-item">
+                <span>What is Netflix?</span>
+                <span class="plus">+</span>
+            </div>
+            <div class="faq-item">
+                <span>How much does Netflix cost?</span>
+                <span class="plus">+</span>
+            </div>
+            <div class="faq-item">
+                <span>Where can I watch?</span>
+                <span class="plus">+</span>
+            </div>
+            <div class="faq-item">
+                <span>How do I cancel?</span>
+                <span class="plus">+</span>
+            </div>
+            <div class="faq-item">
+                <span>What can I watch on Netflix?</span>
+                <span class="plus">+</span>
+            </div>
+            <div class="faq-item">
+                <span>Is Netflix good for kids?</span>
+                <span class="plus">+</span>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="footer-section">
+        <p class="footer-cta-text">Ready to watch? Enter your email to create or restart your membership.</p>
+        <div class="email-form">
+            <input type="email" placeholder="Email address">
+            <button>Get Started </button>
+        </div>
+
+        <p class="contact-text"><a href="https://help.netflix.com/contactus">Questions? Contact us.</a></p>
+
+        <div class="footer-links">
+            <div class="link-column">
+                <a href="https://help.netflix.com/support/412">FAQ</a>
+                <a href="http://ir.netflix.com/">Investor Relations</a>
+                <a href="https://help.netflix.com/legal/privacy">Privacy</a>
+                <a href="https://fast.com/">Speed Test</a>
+            </div>
+            <div class="link-column">
+                <a href="https://help.netflix.com/">Help Center</a>
+                <a href="https://jobs.netflix.com/jobs">Jobs</a>
+                <a href="https://www.netflix.com/ng/#">Cookie Preferences</a>
+                <a href="https://help.netflix.com/legal/notices">Legal Notices</a>
+            </div>
+            <div class="link-column">
+                <a href="https://www.netflix.com/youraccount">Account</a>
+                <a href="https://www.netflix.com/watch">Ways to Watch</a>
+                <a href="https://help.netflix.com/legal/corpinfo">Corporate Information</a>
+                <a href="https://www.netflix.com/ng/browse/genre/839338">Only on Netflix</a>
+            </div>
+            <div class="link-column">
+                <a href="https://media.netflix.com/">Media Center</a>
+                <a href="https://help.netflix.com/legal/termsofuse">Terms of Use</a>
+                <a href="https://help.netflix.com/contactus">Contact Us</a>
+            </div>
+        </div>
+
+        <div class="language-selector">
+            <span><img
+                    src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAg...A5eiIgY2xpcC1ydWxlPSJldmVub2RkIj48L3BhdGg+PC9zdmc+"
+                    alt=""></span>
+            <span> English</span>
+            <span>▼</span>
+        </div>
+
+        <p class="country">Netflix Nigeria</p>
+        <p class="recaptcha">This page is protected by Google reCAPTCHA to ensure you're not a bot.</p>
+    </section>
+
+</body>
+
+</html>
